@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/birth"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/christbirth"
+        android:scaleType="centerCrop"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/depart"
+        />
+
+    <TextView
+        android:text="It starts with Birth..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/depart"
+        android:paddingTop="40dp"
+        android:paddingLeft="20dp"
+        android:textSize="15sp"/>
+
+    <ImageView
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/jesus"
+        android:id="@+id/death"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView android:text="And ends with Death..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@android:color/white"
+        android:paddingTop="30dp"
+        android:paddingRight="15dp"
+        android:textSize="15sp"/>
+
+    <ImageView
+
+        android:layout_height="60dp"
+        android:layout_margin="3dp"
+        android:src="@drawable/heaven"
+        android:id="@+id/light"
+        android:layout_above="@id/end"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+         />
+
+    <TextView android:text="But there's always something more..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@android:color/white"
+        android:layout_above="@id/light"
+        android:padding="0dp"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From, Andrew"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textSize="24sp"
+        android:id="@+id/end"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@android:color/white"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To the Departed,"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:id="@+id/depart"
+        android:padding="20dp"/>
+
+</RelativeLayout>
